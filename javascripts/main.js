@@ -3,33 +3,39 @@ require.config({
 	paths: {
 		'jQuery': 'libs/jquery/dist/jquery',
 		'angular': 'libs/angular/angular',
+		'jquery-form': 'libs/jquery-form/jquery.form',
 		'bootstrap': 'libs/bootstrap/dist/js/bootstrap',
-		'angular-resource': 'libs/angular-resource/angular-resource'
+		'angular-route': 'libs/angular-route/angular-route'
 	},
 	shim: {
+		'jQuery': {
+			exports: 'jQuery'
+		},
 		'angular': {
 			exports: 'angular'
 		},
-		'angular-resource': {
-			deps: ['angular'],
-			exports: 'angular-resource'
-		},
-		'jQuery': {
-			exports: 'jQuery'
+		'jquery-form': {
+			deps: ['jQuery'],
+			exports: 'jquery-form'
 		},
 		'bootstrap': {
 			deps: ['jQuery'],
 			exports: 'bootstrap'
+		},
+		'angular-route': {
+			deps: ['angular'],
+			exports: 'angular-route'
 		}
 	}
 });
 
 require([
 	'jQuery',
-	'angular', 
+	'angular',
+	'jquery-form',
 	'bootstrap',
-	'angular-resource',
-	'modules/makeup'
+	'modules/makeup',
+	'modules/router'
 ] , function($, angular) {
 	$(function () {
 		angular.bootstrap(document, ['makeup']);

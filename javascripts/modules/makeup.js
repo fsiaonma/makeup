@@ -1,4 +1,7 @@
-define(['angular', 'angular-resource'], function (angular) { 
-	var makeup = angular.module('makeup', ['ngResource']);
+define([
+	'angular',
+	'angular-route',
+], function (angular) { 
+	var makeup = angular.module('makeup', ['ngRoute']);
 	return makeup;
 });
