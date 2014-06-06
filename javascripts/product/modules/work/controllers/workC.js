@@ -1,1 +1,0 @@
-define(["common/config","modules/makeup","../services/workS"],function(e,t){t.controller("WorkController",function(e,t,n){t.getWorksList=function(){n.getWorksList()}})});

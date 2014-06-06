@@ -1,1 +1,0 @@
-define(["modules/makeup"],function(e){e.factory("userService",function(e){return{getUser:function(){console.log("get user")}}})});
