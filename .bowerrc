@@ -1,1 +1,2 @@
 { "directory"  : "./javascripts/libs" }
+{ "directory"  : "./javascripts/product/libs" }

@@ -1,0 +1,1 @@
+define(["angular","angular-route"],function(e){var t=e.module("makeup",["ngRoute"]);return t});

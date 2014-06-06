@@ -1,0 +1,1 @@
+define(["modules/makeup","angular-route","modules/user/user","modules/work/work"],function(e,t){e.config(function(e){e.when("/user",{controller:"UserController",templateUrl:"views/user/user.html"}).when("/work",{controller:"UserController",templateUrl:"views/user/user.html"}).otherwise({redirectTo:"/user"})})});

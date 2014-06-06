@@ -1,11 +1,11 @@
 require.config({
 	baseUrl: './javascripts',
 	paths: {
-		'jQuery': 'libs/jquery/dist/jquery',
-		'angular': 'libs/angular/angular',
+		'jQuery': 'libs/jquery/dist/jquery.min',
+		'angular': 'libs/angular/angular.min',
 		'jquery-form': 'libs/jquery-form/jquery.form',
-		'bootstrap': 'libs/bootstrap/dist/js/bootstrap',
-		'angular-route': 'libs/angular-route/angular-route'
+		'bootstrap': 'libs/bootstrap/dist/js/bootstrap.min',
+		'angular-route': 'libs/angular-route/angular-route.min'
 	},
 	shim: {
 		'jQuery': {
@@ -36,7 +36,7 @@ require([
 	'bootstrap',
 	'modules/makeup',
 	'modules/router'
-] , function($, angular) {
+], function($, angular) {
 	$(function () {
 		angular.bootstrap(document, ['makeup']);
 	});
