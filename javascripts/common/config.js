@@ -1,4 +1,6 @@
 define([], function (angular) { 
-	var config = {}
+	var config = {
+		SERVER_URL: "http://localhost/"
+	}
 	return config;
 });
