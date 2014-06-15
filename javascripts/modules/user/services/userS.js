@@ -2,22 +2,21 @@ define([
 	'modules/makeup',
 	'common/config'
 ], function(makeup, config) {
-	makeup.factory('userService', function ($http) {
+	makeup.factory('userService', ["$http", function ($http) {
 		return {
 			regiester: function(params) {
 				$http({
 					method: "jsonp",
 					url: config.SERVER_URL + 'User/register',
 					params: {
-						username: "admin",
-						password: "123456",
-						category_id: "12",
-						captcha: "123"
+						username: params.username,
+						password: params.password,
+						categoryId: params.categoryId
 					}
 				}).success(function(res) {
 					console.log(res);
 				}).error(function(err) {
-					console.log(err)
+					console.log(err);
 				});
 			},
 
@@ -134,5 +133,5 @@ define([
 			}
 			
 		}
-	});
+	}]);
 });

@@ -12,7 +12,7 @@ config.projects = [{
             dir: ['libs/']
         }, {
             merge: true,
-            dir: ['common/', 'modules/', 'main.js']
+            dir: ['common/', 'modules/', 'utils/', 'main.js']
         }]
     },
     css: {

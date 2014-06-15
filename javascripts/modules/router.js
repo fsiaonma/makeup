@@ -4,7 +4,7 @@ define([
 	'modules/user/user',
 	'modules/work/work'
 ], function (makeup, $routeProvider) {
-	makeup.config(function($routeProvider) {
+	makeup.config(['$routeProvider', function($routeProvider) {
 		$routeProvider
 			.when('/user', {
 				controller: 'UserController',
@@ -17,5 +17,5 @@ define([
 			.otherwise({
 				redirectTo: '/user'
 			})
-	});
+	}]);
 });
