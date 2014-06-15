@@ -30,6 +30,11 @@ define([
 				crop.loadFile("avatarFile");
 			}
 
+			$scope.getResults = function(evt) {
+				var data = crop.getResults();
+				$('#crop_result').attr('src', data);
+			}
+
 			var reset = function() {
 				$scope.regiest = {};
 				$scope.login = {};

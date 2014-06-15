@@ -216,8 +216,7 @@ define([], function() {
 		    temp_canvas.height = theSelection.h;
 		    temp_ctx.drawImage(image, theSelection.x, theSelection.y, theSelection.w, theSelection.h, 0, 0, theSelection.w, theSelection.h);
 		    var vData = temp_canvas.toDataURL();
-		    $('#crop_result').attr('src', vData);
-		    $('#results h2').text('Well done, we have prepared our cropped image, now you can save it if you wish');
+		    return vData;
 		}
 	}
 })
