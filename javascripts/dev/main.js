@@ -1,11 +1,11 @@
 require.config({
 	baseUrl: baseUrl,
 	paths: {
-		'jQuery': 'libs/jquery/dist/jquery.min',
-		'angular': 'libs/angular/angular.min',
-		'jquery-form': 'libs/jquery-form/jquery.form',
-		'bootstrap': 'libs/bootstrap/dist/js/bootstrap.min',
-		'angular-route': 'libs/angular-route/angular-route.min'
+		'jQuery': '../libs/jquery/dist/jquery.min',
+		'angular': '../libs/angular/angular.min',
+		'jquery-form': '../libs/jquery-form/jquery.form',
+		'bootstrap': '../libs/bootstrap/dist/js/bootstrap.min',
+		'angular-route': '../libs/angular-route/angular-route.min'
 	},
 	shim: {
 		'jQuery': {

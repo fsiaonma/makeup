@@ -4,22 +4,13 @@ var config = config || {
 
 config.projects = [{
     projectName: 'makeup',        
-    rootPath: '../javascripts/',           
+    rootPath: '../javascripts/dev/',           
     buildPath: '../javascripts/product/',         
     js: {
         copyOnly: [{
-            merge: false,
-            dir: ['libs/']
-        }, {
             merge: true,
             dir: ['common/', 'modules/', 'utils/', 'main.js']
         }]
-    },
-    css: {
-        copyOnly: ['libs/'] 
-    },
-    resources: {
-        copyOnly: ['libs/']
     }
 }];
 

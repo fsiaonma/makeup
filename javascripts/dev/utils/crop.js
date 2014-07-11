@@ -209,6 +209,7 @@ define([], function() {
 		},
 
 		getResults: function() {
+			if (theSelection == undefined) return ;
 		    var temp_ctx, temp_canvas;
 		    temp_canvas = document.createElement('canvas');
 		    temp_ctx = temp_canvas.getContext('2d');
